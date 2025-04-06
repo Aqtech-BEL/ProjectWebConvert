@@ -1,0 +1,354 @@
+*{
+    font-family: 'Roboto', sans-serif;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background: #F4F4F4;
+    height: 100vh; /* Define a altura exata da tela */
+    
+}
+
+
+
+.top {
+    width: 100%;  
+    background: #1B83E2;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.top h2 {
+    color: #F4F4F4;
+    font-size: 24px;
+    line-height: 10px;
+}
+
+.conteiner{
+    width: calc(100% - 32px); /* 100% menos os 16px de cada lado */
+    max-width: 327px;
+    margin: 10px auto 0;
+    
+}
+
+
+.textselect{
+    
+    color: #777777;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 10px;
+    letter-spacing: 0%;
+   
+}
+
+.textselect span{/*destaque SPAN*/
+    color: #777777;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0%;  
+    
+}
+
+.textselect select{
+    width: 327px;
+    height: 40px;
+    border-radius: 4px;
+    border-width: 1px;
+    color: #555555;
+    background: #FFFFFF;
+    border: 1px solid #BBBBBB; 
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18px;
+    letter-spacing: 0%;
+    display: block;
+    cursor: pointer;
+    margin-top: 6px;
+    
+}
+
+label{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 30px;
+    letter-spacing: 0%;
+    color: #777777;
+        
+}
+
+label input{
+    width: 327px;
+    height: 40px;
+    border-radius: 4px;
+    border-width: 1px;
+    background: #FFFFFF;
+    border: 1px solid #BBBBBB; 
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18px;
+    letter-spacing: 0%;
+    display: block;
+    text-align: right;
+    color: #555555;
+    box-shadow: 2px 2px 5px 0px #00000026;
+    padding-right: 10px;
+       
+}
+
+button{
+       
+    width: 327px;
+    height: 35px;
+    border-radius: 25px;
+    background: #1B83E2;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 18px;
+    letter-spacing: 0%;
+    color: #F4F4F4;
+    padding: 0px;
+    display: block;
+    margin: 10px auto 10px auto;
+    cursor: pointer;
+}
+
+button:hover{
+    opacity: 0.9;
+}
+
+button:active{
+    opacity: 0.7;
+}
+
+section{
+    width: 327px; 
+    height: 286px;
+    border-radius: 4px;
+    border-width: 1px;
+    border: 1px solid #1B83E2;
+    display: block;
+    margin: 10px auto 10px auto;
+}
+
+.imgcoin{
+    width: 44px;
+    height: 44px;
+    margin: 12px 0px 4px 140px;
+
+}
+
+.typecoin{
+    
+    height: 18px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0%;
+    text-align: center;
+    color: #777777;
+    margin-top: 4px;
+    margin-bottom: 2px;
+}
+
+.value{
+    
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 18px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    height: 18px;
+    color: #1B83E2;
+    text-align: center;
+    margin-top: 2px;
+    margin-bottom: 15px;
+}
+
+#imgarrow{
+    width: 35px;
+    height: 49px;
+    display: block;
+    margin: auto;
+    
+}
+
+@media(max-width: 414px) { 
+    *{
+        font-family: 'Roboto', sans-serif;
+        padding: 0px;
+        margin: 0px;
+        box-sizing: border-box;
+    }
+   
+    body{
+        background: #F4F4F4;
+        min-height: 100vh; /* Define a altura exata da tela */
+        
+    }
+          
+    .top {
+        width: 100%;  
+        background: #1B83E2;
+        padding: 20px 0;
+        text-align: center;
+    }
+    
+    .top h2 {
+        color: #F4F4F4;
+        font-size: 24px;
+        line-height: 10px;
+    }
+    
+   .conteiner{
+        width: calc(100% - 32px);
+        max-width: 327px;
+        margin: 10px auto 0px; /* centraliza horizontalmente */
+        padding: 0px; /* opcional: evita colar na borda da tela */
+        box-sizing: border-box;
+   }
+    
+    .textselect{
+        
+        color: #777777;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 10px;
+        letter-spacing: 0%;
+           
+    }
+    
+    .textselect span{/*destaque SPAN*/
+        color: #777777;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 18px;
+        letter-spacing: 0%;  
+        
+    }
+    
+    .textselect select{
+        
+        width: 327px;
+        height: 50px;
+        border-radius: 4px;
+        border-width: 1px;
+        color: #555555;
+        background: #FFFFFF;
+        border: 1px solid #BBBBBB; 
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 18px;
+        letter-spacing: 0%;
+        display: block;
+                       
+    }
+    
+    label{
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 30px;
+        letter-spacing: 0%;
+        color: #777777;
+            
+    }
+    
+    label input{
+        width: 327px;
+        height: 50px;
+        border-radius: 4px;
+        border-width: 1px;
+        background: #FFFFFF;
+        border: 1px solid #BBBBBB; 
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 18px;
+        letter-spacing: 0%;
+        display: block;
+        text-align: right;
+        color: #555555;
+        box-shadow: 2px 2px 5px 0px #00000026;
+        padding-right: 10px;
+        margin-bottom: 0px;
+        
+    }
+    
+    button{
+           
+        width: 327px;
+        height: 50px;
+        border-radius: 25px;
+        background: #1B83E2;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 18px;
+        letter-spacing: 0%;
+        color: #F4F4F4;
+        margin: 10px auto 0px auto; /* centraliza e dá espaço acima */
+        display: block;
+        
+    }
+    
+    button:hover{
+        opacity: 0.9;
+    }
+    
+    button:active{
+        opacity: 0.5;
+    }
+    
+    section{
+        width: 327px; 
+        height: 286px;
+        border-radius: 4px;
+        border-width: 1px;
+        border: 1px solid #1B83E2;
+        display: block;
+        margin: 10px auto 0px auto;
+    }
+    
+    .imgcoin{
+        width: 44px;
+        height: 44px;
+        margin: 12px 0px 4px 140px;
+    
+    }
+    
+    .typecoin{
+        
+        height: 18px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 18px;
+        letter-spacing: 0%;
+        text-align: center;
+        color: #777777;
+        margin-top: 4px;
+        margin-bottom: 2px;
+    }
+    
+    .value{
+        
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 18px;
+        letter-spacing: 0%;
+        vertical-align: middle;
+        height: 18px;
+        color: #1B83E2;
+        text-align: center;
+        margin-top: 2px;
+        margin-bottom: 15px;
+    }
+    
+    #imgarrow{
+        width: 35px;
+        height: 49px;
+        display: block;
+        margin: auto;
+        
+    }
+} 

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=01.0">
+    <link rel= "stylesheet"  href="./style.css"/>
+    <link rel="preconnect" href="https://fonts.g0oogleapis.com">
+    <link rel="preconnect" href="https://fonts.g0static.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,0100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;01,0100;01,200;01,300;01,400;01,500;01,600;01,700;01,800;01,900&family=Roboto:ital,wght@0,0100..900;01,0100..900&display=swap" rel="stylesheet">
+    <title>Convert Money - WEB</title>
+</head>
+<body>
+    <header class="top">
+        <h2>Convert Money</h2>
+    </header>
+    <main>        
+        <div class="conteiner">
+            <label class="textselect">
+                Converter <span>de</span>
+                <select>
+                    <option value="01">R$ Real brasileiro </option>
+                    <option value="02">US$ Dólar americano </option>
+                    <option value="03">€ Euro </option>
+                    <option value="04">₿ Bitcoin </option>
+                </select>    
+            </label>
+        </div>
+        <div class="conteiner">
+            <label class="textselect">
+                Converter <span>para</span>
+                <select>
+                    <option value="01">US$ Dólar americano </option>
+                    <option value="02">€ Euro </option>
+                    <option value="03">₿ Bitcoin </option>
+                    <option value="04">R$ Real brasileiro </option>
+                </select>    
+            </label>
+        </div>  
+        <div class="conteiner">
+            <label>
+                Valor
+                <input type="text"  id="input" placeholder="R$ 0,00"/>
+                <input type="hidden" id="inputhidden" />
+            </label>            
+        </div>
+        <div>
+            <button id="button" type="button">Converter</button>
+        </div>
+        <section>            
+            <div>
+                <img class="imgcoin" src="./assets/01.png" alt="bandeira-pais-conversao"/>
+                <p class="typecoin">R$ Real brasileiro </p>
+                <p class="value">R$ 0,00 </p>
+            </div>
+            <img id="imgarrow"src="./assets/Seta.png" alt="arrow"/>
+            <div>
+                <img class="imgcoin" src="./assets/02.png" alt="bandeira-pais-conversao"/>
+                <p class="typecoin">US$ Dólar americano </p>
+                <p class="value">US$ 0,00 </p>
+            </div>    
+        </section>
+    </main>
+</body>
+<script src="./scripts.js"></script>
+</html>
