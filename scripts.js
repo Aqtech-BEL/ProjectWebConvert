@@ -7,7 +7,7 @@ const valueCoin = {
     USD: 1,            // Base    
     EUR: 0.9213,        // 1 USD = 0.9213 EUR
     BTC: 0.00002171,     // 1 USD = 0.00002171 BTC
-  };
+};
 
 
 
@@ -18,7 +18,7 @@ selectOptionOne.addEventListener("change", () => {
     const selectdOption = selectOptionOne.options[selectOptionOne.selectedIndex];
     document.getElementsByClassName("typecoin")[0].textContent = selectdOption.textContent;
     document.getElementsByClassName("imgcoin")[0].src = `./assets/${selectOptionOne.value}.png`;
-    
+
     const input = document.querySelector("input");
     const inputhidden = document.querySelector("#inputhidden");
     input.value = ""; // Limpa o valor visível
@@ -28,7 +28,7 @@ selectOptionOne.addEventListener("change", () => {
     const symbolCoin = selectdOption.textContent.split(" ")[0]; //SIMBOLO
     input.placeholder = `${symbolCoin} 0,00`;
     document.getElementsByClassName("value")[0].textContent = input.placeholder;
-    
+
 });
 
 //SELECTION SECOND
@@ -43,16 +43,16 @@ selectOptionTwo.addEventListener("change", () => {
 
     //Está pegando o simbolo que está no selct e jogando para o value
     const symbolCoin = selectdOption.textContent.split(" ")[0];
-     document.getElementsByClassName("value")[1].textContent = `${symbolCoin} 0,00`
+    document.getElementsByClassName("value")[1].textContent = `${symbolCoin} 0,00`
 });
 
 //INPUT
 
 const enter = (event) => {
 
-    if(event.key === "Enter"){
+    if (event.key === "Enter") {
         event.preventDefault(); // evita que envie formulário (se tiver)
-        
+
         let value = input.value.trim();
 
         // Remove o símbolo do começo, se tiver (ex: "R$ ", "US$ ", etc)
@@ -63,9 +63,9 @@ const enter = (event) => {
 
         const symbol = document.querySelector("select");
         const indexSymbol = symbol.options[symbol.selectedIndex];
-        const symbolCoin = indexSymbol.textContent.split(" ")[0]; 
+        const symbolCoin = indexSymbol.textContent.split(" ")[0];
 
-         // Verifica se já tem vírgula (ex: "10,50")
+        // Verifica se já tem vírgula (ex: "10,50")
         if (!value.includes(",")) {
             value += ",00";
         } else {
@@ -101,26 +101,26 @@ input.addEventListener("keydown", enter);
 
 //BUTTON
 const clickbutton = () => {
-   
+
     const selectFirst = document.getElementsByTagName("select")[0];
-    const firstAcronym = acronym[parseInt(selectFirst.value)-1]; //PARA RECEBER UM VALOR NO LUGAR DE UMA STRING
+    const firstAcronym = acronym[parseInt(selectFirst.value) - 1]; //PARA RECEBER UM VALOR NO LUGAR DE UMA STRING
     const rateFirst = valueCoin[firstAcronym];
 
     const selectSecond = document.getElementsByTagName("select")[1];
-    const secondAcronym = acronymS[parseInt(selectSecond.value)-1]; //PARA RECEBER UM VALOR NO LUGAR DE UMA STRING
+    const secondAcronym = acronymS[parseInt(selectSecond.value) - 1]; //PARA RECEBER UM VALOR NO LUGAR DE UMA STRING
     const rateSecond = valueCoin[secondAcronym];
 
     //valorConvertido = valorOriginal * (taxas[moedaDestino] / taxas[moedaOrigem]);
     const rate = inputhidden.value * (rateSecond / rateFirst);
-   
+
     let result = rate.toFixed(2).replace(".", ",");
 
     const indexSymbol = selectSecond.options[selectSecond.selectedIndex];
-    const symbolCoin = indexSymbol.textContent.split(" ")[0]; 
+    const symbolCoin = indexSymbol.textContent.split(" ")[0];
 
-     
+
     document.getElementsByClassName("value")[1].textContent = `${symbolCoin} ${result}`;
-     
+
 };
 
 
